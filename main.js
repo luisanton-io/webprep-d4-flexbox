@@ -46,41 +46,48 @@ function changeAll(e, t, n, l) {
     changeFlexShrink(n, l)
 }
 
-for (let items = document.querySelectorAll(".item"), i = 0; i < items.length; i++)
-    if (items[i].hasAttribute("data-color"))
-        items[i].style.backgroundColor = "#" + items[i].getAttribute("data-color")
-
-for (let flexO = document.querySelectorAll(".flex-order"), o = 0; o < flexO.length; o++) flexO[o].addEventListener("change", function () {
-    changeFlexOrder(this, "order" + this.id)
-}, !1);
-
-changeFlex("flex-direction", "direction")
-changeFlex("flex-wrap", "wrap")
-changeFlex("flex-align-items", "align")
-changeFlex("justify-content", "justify")
-changeFlex("align-content", "alignContent")
-changeItemFlex("align-self", "alignSelf");
-
-for (let flexGrow = document.querySelectorAll(".flex-grow"), i = 0; i < flexGrow.length; i++) flexGrow[i].addEventListener("change", function () {
-    let e = "item" + this.id;
-    changeFlexGrow(this, e)
-});
-for (let flexShrink = document.querySelectorAll(".flex-shrink"), j = 0; j < flexShrink.length; j++) flexShrink[j].addEventListener("change", function () {
-    let e = "item" + this.id;
-    changeFlexShrink(this, e)
-});
 
 
-const [B1, G1, S1, B2, G2, S2] = ["B1", "G1", "S1", "B2", "G2", "S2"].map(id => document.getElementById(id));
+window.onload = () => {
+    for (let items = document.querySelectorAll(".item"), i = 0; i < items.length; i++)
+        if (items[i].hasAttribute("data-color"))
+            items[i].style.backgroundColor = "#" + items[i].getAttribute("data-color")
 
-["B1", "G1", "S1"].forEach(id => {
-    document.getElementById(id).addEventListener("change", function () {
-        changeAll(B1, G1, S1, "item1")
-    })
-});
+    for (let flexO = document.querySelectorAll(".flex-order"), o = 0; o < flexO.length; o++) flexO[o].addEventListener("change", function () {
+        changeFlexOrder(this, "order" + this.id)
+    }, !1);
 
-["B2", "G2", "S2"].forEach(id => {
-    document.getElementById(id).addEventListener("change", function () {
-        changeAll(B2, G2, S2, "item2")
-    })
-})
+    changeFlex("flex-direction", "direction")
+    changeFlex("flex-wrap", "wrap")
+    changeFlex("flex-align-items", "align")
+    changeFlex("justify-content", "justify")
+    changeFlex("align-content", "alignContent")
+    changeItemFlex("align-self", "alignSelf");
+
+    for (let flexGrow = document.querySelectorAll(".flex-grow"), i = 0; i < flexGrow.length; i++) flexGrow[i].addEventListener("change", function () {
+        let e = "item" + this.id;
+        changeFlexGrow(this, e)
+    });
+    for (let flexShrink = document.querySelectorAll(".flex-shrink"), j = 0; j < flexShrink.length; j++) flexShrink[j].addEventListener("change", function () {
+        let e = "item" + this.id;
+        changeFlexShrink(this, e)
+    });
+
+
+    // const [B1, G1, S1, B2, G2, S2] = ["B1", "G1", "S1", "B2", "G2", "S2"].map(id => document.getElementById(id));
+
+    // ["B1", "G1", "S1"].forEach(id => {
+    //     console.log(id, document.getElementById(id))
+    //     document.getElementById(id).addEventListener("change", function () {
+    //         changeAll(B1, G1, S1, "item1")
+    //     })
+    // });
+
+    // ["B2", "G2", "S2"].forEach(id => {
+    //     document.getElementById(id).addEventListener("change", function () {
+    //         changeAll(B2, G2, S2, "item2")
+    //     })
+    // })
+
+
+}
