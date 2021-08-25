@@ -2,9 +2,28 @@
 
 html {
     font-size: 24px;
+    scroll-snap-type: y mandatory;
 }
 :root {
     --strive-green: #00ff84;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe {
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 95vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header {
@@ -21,7 +40,7 @@ html {
 
 h2 {
     font-weight: 900;
-    font-size: 2em;
+    font-size: 5em;
     display: inline-flex;
     height: 100vh;
     align-items: center;
@@ -30,7 +49,7 @@ h2 {
 }
 
 img[src="icon.png"] {
-    width: 50px;
+    width: 150px;
     margin-right: 0.8ch;
 }
 
@@ -258,24 +277,13 @@ body {
     margin: 0 auto;
 }
 
-.principal > div {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container-props h4,
-.container-props label,
-.item-props h4,
-.item-props label {
+h4,
+label {
     font-family: "Roboto Mono", monospace;
     font-size: 1.3em;
     user-select: none;
 }
-
-.container-props h4,
-.item-props h4 {
+h4 {
     color: var(--strive-green);
     margin: 2.5em 0px 0.8em;
 }
@@ -430,11 +438,6 @@ table td {
 }
 .nbsp {
     white-space: nowrap;
-}
-
-iframe {
-    width: 100%;
-    height: 100vh;
 }
 
 @media only screen and (max-width: 1100px) {
