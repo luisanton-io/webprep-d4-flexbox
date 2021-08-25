@@ -10,19 +10,23 @@ html {
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .header img {
     width: 30vw;
-    margin: 10vh;
+    /* margin: 30vh 10vw; */
 }
 
 h2 {
     font-weight: 900;
     font-size: 2em;
     display: inline-flex;
+    height: 100vh;
     align-items: center;
-    margin: 0.5em 0px;
+    /* margin: 0.5em 0px; */
+    /* margin: 40vh 0px 1.5em; */
 }
 
 img[src="icon.png"] {

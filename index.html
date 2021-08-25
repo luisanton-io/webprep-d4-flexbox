@@ -86,7 +86,7 @@
                 <h4>align-items:</h4>
                 <div class="radio">
                     <input name="flex-align-items" type="radio" class="flex-align-items" id="R31"
-                        value="align-items-start"><label for="R31">flex-start</label>
+                        value="align-items-start" checked><label for="R31">flex-start</label>
                     <input name="flex-align-items" type="radio" class="flex-align-items" id="R32"
                         value="align-items-end"><label for="R32">flex-end</label>
                     <input name="flex-align-items" type="radio" class="flex-align-items" id="R33"
@@ -94,7 +94,7 @@
                     <input name="flex-align-items" type="radio" class="flex-align-items" id="R34"
                         value="align-items-baseline"><label for="R34">baseline</label>
                     <input name="flex-align-items" type="radio" class="flex-align-items" id="R35"
-                        value="align-items-stretch" checked><label for="R35">stretch</label>
+                        value="align-items-stretch"><label for="R35">stretch</label>
                 </div>
             </div>
             <div class="flex-container" id="align">
@@ -160,8 +160,8 @@
             <div class="control">
                 <h4>align-content:</h4>
                 <div class="radio">
-                    <input name="align-content" type="radio" class="align-content" id="R51"
-                        value="align-content-start"><label for="R51">flex-start</label>
+                    <input name="align-content" type="radio" class="align-content" id="R51" value="align-content-start"
+                        checked><label for="R51">flex-start</label>
                     <input name="align-content" type="radio" class="align-content" id="R52"
                         value="align-content-end"><label for="R52">flex-end</label>
                     <input name="align-content" type="radio" class="align-content" id="R53"
@@ -171,7 +171,7 @@
                     <input name="align-content" type="radio" class="align-content" id="R55"
                         value="align-content-space-around"><label for="R55">space-around</label>
                     <input name="align-content" type="radio" class="align-content" id="R56"
-                        value="align-content-stretch" checked><label for="R56">stretch</label>
+                        value="align-content-stretch"><label for="R56">stretch</label>
                 </div>
             </div>
             <div class="flex-container" id="alignContent">
@@ -240,54 +240,48 @@
             </div>
         </div>
 
-        <h2 style="margin: 3em 0px 1.5em"><img src="icon.png">Flexbox Froggy!</h2>
-
-        <iframe src="https://flexboxfroggy.com"></iframe>
-
-    </div>
-
-
-    <!-- <div class="principal item-props">
         <h2><img src="icon.png">Properties for the flex items </h2>
-        <div class="control">
-            <h4>align-self:</h4>
-            <div class="radio">
-                <input name="align-self" type="radio" class="align-self" id="R61" value="align-self-auto" checked><label
-                    for="R61">auto</label>
-                <input name="align-self" type="radio" class="align-self" id="R62" value="align-self-start"><label
-                    for="R62">flex-start</label>
-                <input name="align-self" type="radio" class="align-self" id="R63" value="align-self-end"><label
-                    for="R63">flex-end</label>
-                <input name="align-self" type="radio" class="align-self" id="R64" value="align-self-center"><label
-                    for="R64">center</label>
-                <input name="align-self" type="radio" class="align-self" id="R65" value="align-self-baseline"><label
-                    for="R65">baseline</label>
-                <input name="align-self" type="radio" class="align-self" id="R66" value="align-self-stretch"><label
-                    for="R66">stretch</label>
-            </div>
+        <div>
+            <div class="control">
+                <h4>align-self:</h4>
+                <div class="radio">
+                    <input name="align-self" type="radio" class="align-self" id="R61" value="align-self-auto"
+                        checked><label for="R61">auto</label>
+                    <input name="align-self" type="radio" class="align-self" id="R62" value="align-self-start"><label
+                        for="R62">flex-start</label>
+                    <input name="align-self" type="radio" class="align-self" id="R63" value="align-self-end"><label
+                        for="R63">flex-end</label>
+                    <input name="align-self" type="radio" class="align-self" id="R64" value="align-self-center"><label
+                        for="R64">center</label>
+                    <input name="align-self" type="radio" class="align-self" id="R65" value="align-self-baseline"><label
+                        for="R65">baseline</label>
+                    <input name="align-self" type="radio" class="align-self" id="R66" value="align-self-stretch"><label
+                        for="R66">stretch</label>
+                </div>
 
+            </div>
+            <div class="flex-container align-items-center" id="FCI1">
+
+                <div class="item" data-color="f49c14">
+                    <p>1</p>
+                </div>
+                <div class="item" data-color="d55401">
+                    <p>2</p>
+                </div>
+                <div class="item" data-color="c1392b" id="alignSelf">
+                    <p style="font-size:50px;">3</p>
+                </div>
+                <div class="item" data-color="bec3c7">
+                    <p>4</p>
+                </div>
+                <div class="item" data-color="808b8d">
+                    <p>5</p>
+                </div>
+
+            </div>
         </div>
-        <div class="flex-container align-items-center" id="FCI1">
 
-            <div class="item" data-color="f49c14">
-                <p>1</p>
-            </div>
-            <div class="item" data-color="d55401">
-                <p>2</p>
-            </div>
-            <div class="item" data-color="c1392b" id="alignSelf">
-                <p style="font-size:50px;">3</p>
-            </div>
-            <div class="item" data-color="bec3c7">
-                <p>4</p>
-            </div>
-            <div class="item" data-color="808b8d">
-                <p>5</p>
-            </div>
-
-        </div>
-
-        <div class="control">
+        <!-- <div class="control">
             <h4>flex-grow:</h4>
             <div class="radio">
                 <span class="nbsp"><label for="R71">Element 1: </label><input type="number" class="flex-grow" id="R71"
@@ -321,11 +315,11 @@
                 <p>5</p>
             </div>
 
-        </div>
+        </div> -->
 
 
 
-        <div class="control">
+        <!-- <div class="control">
             <h4>flex-shrink:</h4>
             <div class="radio">
                 <span class="nbsp"><label for="R81">Element 1: </label><input type="number" class="flex-shrink" id="R81"
@@ -359,10 +353,10 @@
                 <p>5</p>
             </div>
 
-        </div>
+        </div> -->
 
 
-        <div class="control">
+        <!-- <div class="control">
             <h4>flex-basis:</h4>
             <p>.item { flex: flex-grow [flex-shrink] [flex-basis]; } </p>
             <table id="flexBasis">
@@ -401,47 +395,55 @@
                 <p>2</p>
             </div>
 
+        </div> -->
+
+
+        <div>
+            <div class="control">
+                <h4>order:</h4>
+
+                <div class="radio">
+                    <span class="nbsp"><label for="R91">Element 1: </label><input type="number" class="flex-order"
+                            id="R91" min="0"></span>
+                    <span class="nbsp"><label for="R92">Element 2: </label><input type="number" class="flex-order"
+                            id="R92" min="0"></span>
+                    <span class="nbsp"><label for="R93">Element 3: </label><input type="number" class="flex-order"
+                            id="R93" min="0"></span>
+                    <span class="nbsp"><label for="R94">Element 4: </label><input type="number" class="flex-order"
+                            id="R94" min="0"></span>
+                    <span class="nbsp"><label for="R95">Element 5: </label><input type="number" class="flex-order"
+                            id="R95" min="0"></span>
+                </div>
+
+            </div>
+            <div class="flex-container align-items-center" id="FCI5">
+
+
+                <div class="item" id="orderR91" data-color="f49c14">
+                    <p>1</p>
+                </div>
+                <div class="item" id="orderR92" data-color="d55401">
+                    <p>2</p>
+                </div>
+                <div class="item" id="orderR93" data-color="c1392b">
+                    <p>3</p>
+                </div>
+                <div class="item" id="orderR94" data-color="bec3c7">
+                    <p>4</p>
+                </div>
+                <div class="item" id="orderR95" data-color="808b8d">
+                    <p>5</p>
+                </div>
+
+            </div>
         </div>
 
-
-        <div class="control">
-            <div class="radio">
-                <span class="nbsp"><label for="R91">Element 1: </label><input type="number" class="flex-order" id="R91"
-                        min="0"></span>
-                <span class="nbsp"><label for="R92">Element 2: </label><input type="number" class="flex-order" id="R92"
-                        min="0"></span>
-                <span class="nbsp"><label for="R93">Element 3: </label><input type="number" class="flex-order" id="R93"
-                        min="0"></span>
-                <span class="nbsp"><label for="R94">Element 4: </label><input type="number" class="flex-order" id="R94"
-                        min="0"></span>
-                <span class="nbsp"><label for="R95">Element 5: </label><input type="number" class="flex-order" id="R95"
-                        min="0"></span>
-            </div>
-
-        </div>
-        <div class="flex-container align-items-center" id="FCI5">
+        <h2><img src="icon.png">Flexbox Froggy!</h2>
+        <iframe src="https://flexboxfroggy.com"></iframe>
 
 
-            <div class="item" id="orderR91" data-color="f49c14">
-                <p>1</p>
-            </div>
-            <div class="item" id="orderR92" data-color="d55401">
-                <p>2</p>
-            </div>
-            <div class="item" id="orderR93" data-color="c1392b">
-                <p>3</p>
-            </div>
-            <div class="item" id="orderR94" data-color="bec3c7">
-                <p>4</p>
-            </div>
-            <div class="item" id="orderR95" data-color="808b8d">
-                <p>5</p>
-            </div>
 
-        </div>
-
-
-    </div> -->
+    </div>
 
     <script type="text/javascript" src="main.js"></script>
 </body>
