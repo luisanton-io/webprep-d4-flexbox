@@ -18,43 +18,46 @@
         <section>
             <h2><img src="icon.png">Properties for flex containers </h2>
         </section>
-        <section>
+        <section id="flex-direction">
             <div class="control">
                 <h4>flex-direction:</h4>
                 <div class="radio">
-                    <input name="flex-direction" type="radio" class="flex-direction" id="R11" value="row" checked><label
-                        for="R11">row</label>
-                    <input name="flex-direction" type="radio" class="flex-direction" id="R12" value="row-reverse"><label
-                        for="R12">row-reverse</label>
-                    <input name="flex-direction" type="radio" class="flex-direction" id="R13" value="column"><label
-                        for="R13">column</label>
-                    <input name="flex-direction" type="radio" class="flex-direction" id="R14"
-                        value="column-reverse"><label for="R14">column-reverse</label>
+
+                    <input name="flex-direction" type="radio" id="R11" value="row" checked>
+                    <label for="R11">row</label>
+
+                    <input name="flex-direction" type="radio" id="R12" value="row-reverse">
+                    <label for="R12">row-reverse</label>
+
+                    <input name="flex-direction" type="radio" id="R13" value="column">
+                    <label for="R13">column</label>
+
+                    <input name="flex-direction" type="radio" id="R14" value="column-reverse">
+                    <label for="R14">column-reverse</label>
                 </div>
             </div>
-            <div class="flex-container" id="direction">
-                <div class="item" data-color="2a80b9">
+            <div class="flex-container">
+                <div class="item" style="background-color: #2a80b9">
                     <p>1</p>
                 </div>
-                <div class="item" data-color="8f44ad">
+                <div class="item" style="background-color: #8f44ad">
                     <p>2</p>
                 </div>
-                <div class="item" data-color="16a086">
+                <div class="item" style="background-color: #16a086">
                     <p>3</p>
                 </div>
-                <div class="item" data-color="f1c40f">
+                <div class="item" style="background-color: #f1c40f">
                     <p>4</p>
                 </div>
-                <div class="item" data-color="e77e23">
+                <div class="item" style="background-color: #e77e23">
                     <p>5</p>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="flex-wrap" style="--flex-wrap: nowrap">
             <div class="control">
                 <h4>flex-wrap:</h4>
-                <!--nowrap | wrap | wrap-reverse;-->
                 <div class="radio">
                     <input name="flex-wrap" type="radio" class="flex-wrap" id="R21" value="nowrap" checked><label
                         for="R21">nowrap</label>
@@ -65,177 +68,192 @@
                 </div>
             </div>
             <div class="flex-container" id="wrap">
-                <div class="item" data-color="2a80b9">
+                <div class="item" style="background-color: #2a80b9">
                     <p>1</p>
                 </div>
-                <div class="item" data-color="8f44ad">
+                <div class="item" style="background-color: #8f44ad">
                     <p>2</p>
                 </div>
-                <div class="item" data-color="16a086">
+                <div class="item" style="background-color: #16a086">
                     <p>3</p>
                 </div>
-                <div class="item" data-color="f1c40f">
+                <div class="item" style="background-color: #f1c40f">
                     <p>4</p>
                 </div>
-                <div class="item" data-color="e77e23">
+                <div class="item" style="background-color: #e77e23">
                     <p>5</p>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="align-items" style="--align-items: flex-start">
             <div class="control">
                 <h4>align-items:</h4>
                 <div class="radio">
-                    <input name="flex-align-items" type="radio" class="flex-align-items" id="R31"
-                        value="align-items-start" checked><label for="R31">flex-start</label>
-                    <input name="flex-align-items" type="radio" class="flex-align-items" id="R32"
-                        value="align-items-end"><label for="R32">flex-end</label>
-                    <input name="flex-align-items" type="radio" class="flex-align-items" id="R33"
-                        value="align-items-center"><label for="R33">center</label>
-                    <!-- <input name="flex-align-items" type="radio" class="flex-align-items" id="R34"
-                        value="align-items-baseline"><label for="R34">baseline</label> -->
-                    <input name="flex-align-items" type="radio" class="flex-align-items" id="R35"
-                        value="align-items-stretch"><label for="R35">stretch</label>
+
+                    <input name="align-items" type="radio" id="R31" value="flex-start" checked>
+                    <label for="R31">flex-start</label>
+
+                    <input name="align-items" type="radio" id="R32" value="flex-end">
+                    <label for="R32">flex-end</label>
+
+                    <input name="align-items" type="radio" id="R33" value="center">
+                    <label for="R33">center</label>
+
+                    <input name="align-items" type="radio" id="R35" value="stretch">
+                    <label for="R35">stretch</label>
+                    <!-- <input name="flex-align-items" type="radio" id="R34"
+                            value="align-items-baseline">
+                            <label for="R34">baseline</label> -->
                 </div>
             </div>
             <div class="flex-container" id="align">
-                <div class="item" data-color="2a80b9">
+                <div class="item" style="background-color: #2a80b9">
                     <p>1</p>
                 </div>
-                <div class="item" data-color="8f44ad">
+                <div class="item" style="background-color: #8f44ad">
                     <p>2</p>
                 </div>
-                <div class="item" data-color="16a086">
+                <div class="item" style="background-color: #16a086">
                     <p style="font-size:50px;">3</p>
                 </div>
-                <div class="item" data-color="f1c40f">
+                <div class="item" style="background-color: #f1c40f">
                     <p>4</p>
                 </div>
-                <div class="item" data-color="e77e23">
+                <div class="item" style="background-color: #e77e23">
                     <p>5</p>
                 </div>
             </div>
         </section>
 
 
-        <section>
+        <section id="justify-content" style="--justify-content: flex-start">
             <div class="control">
                 <h4>justify-content:</h4>
-                <!--justify-content: flex-start | flex-end | center | space-between | space-around; -->
                 <div class="radio">
-                    <input name="justify-content" type="radio" class="justify-content" id="R41" value="justify-start"
-                        checked><label for="R41">flex-start</label>
-                    <input name="justify-content" type="radio" class="justify-content" id="R42"
-                        value="justify-end"><label for="R42">flex-end</label>
-                    <input name="justify-content" type="radio" class="justify-content" id="R43"
-                        value="justify-space-between"><label for="R43">space-between</label>
-                    <input name="justify-content" type="radio" class="justify-content" id="R44"
-                        value="justify-center"><label for="R44">center</label>
-                    <input name="justify-content" type="radio" class="justify-content" id="R45"
-                        value="justify-space-around"><label for="R45">space-around</label>
-                    <input name="justify-content" type="radio" class="justify-content" id="R46"
-                        value="justify-space-evenly"><label for="R46">space-evenly</label>
+                    <input name="justify-content" type="radio" id="R41" value="flex-start" checked>
+                    <label for="R41">flex-start</label>
+
+                    <input name="justify-content" type="radio" id="R42" value="flex-end">
+                    <label for="R42">flex-end</label>
+
+                    <input name="justify-content" type="radio" id="R43" value="space-between">
+                    <label for="R43">space-between</label>
+
+                    <input name="justify-content" type="radio" id="R44" value="center">
+                    <label for="R44">center</label>
+
+                    <input name="justify-content" type="radio" id="R45" value="space-around">
+                    <label for="R45">space-around</label>
+
+                    <input name="justify-content" type="radio" id="R46" value="space-evenly">
+                    <label for="R46">space-evenly</label>
                 </div>
             </div>
-            <div class="flex-container" id="justify">
-                <div class="item" data-color="2a80b9">
+            <div class="flex-container">
+                <div class="item" style="background-color: #2a80b9">
                     <p>1</p>
                 </div>
-                <div class="item" data-color="8f44ad">
+                <div class="item" style="background-color: #8f44ad">
                     <p>2</p>
                 </div>
-                <div class="item" data-color="16a086">
+                <div class="item" style="background-color: #16a086">
                     <p>3</p>
                 </div>
-                <div class="item" data-color="f1c40f">
+                <div class="item" style="background-color: #f1c40f">
                     <p>4</p>
                 </div>
-                <div class="item" data-color="e77e23">
+                <div class="item" style="background-color: #e77e23">
                     <p>5</p>
                 </div>
 
             </div>
         </section>
 
-        <section>
+        <section id="align-content" style="--align-content: flex-start">
             <div class="control">
                 <h4>align-content:</h4>
                 <div class="radio">
-                    <input name="align-content" type="radio" class="align-content" id="R51" value="align-content-start"
-                        checked><label for="R51">flex-start</label>
-                    <input name="align-content" type="radio" class="align-content" id="R52"
-                        value="align-content-end"><label for="R52">flex-end</label>
-                    <input name="align-content" type="radio" class="align-content" id="R53"
-                        value="align-content-center"><label for="R53">center</label>
-                    <input name="align-content" type="radio" class="align-content" id="R54"
-                        value="align-content-space-between"><label for="R54">space-between</label>
-                    <input name="align-content" type="radio" class="align-content" id="R55"
-                        value="align-content-space-around"><label for="R55">space-around</label>
-                    <input name="align-content" type="radio" class="align-content" id="R56"
-                        value="align-content-stretch"><label for="R56">stretch</label>
+
+                    <input name="align-content" type="radio" id="R51" value="flex-start" checked>
+                    <label for="R51">flex-start</label>
+
+                    <input name="align-content" type="radio" id="R52" value="flex-end">
+                    <label for="R52">flex-end</label>
+
+                    <input name="align-content" type="radio" id="R53" value="center">
+                    <label for="R53">center</label>
+
+                    <input name="align-content" type="radio" id="R54" value="space-between">
+                    <label for="R54">space-between</label>
+
+                    <input name="align-content" type="radio" id="R55" value="space-around">
+                    <label for="R55">space-around</label>
+
+                    <input name="align-content" type="radio" id="R56" value="stretch">
+                    <label for="R56">stretch</label>
                 </div>
             </div>
-            <div class="flex-container" id="alignContent">
+            <div class="flex-container">
 
-                <div class="item" data-color="1bbc9d">
+                <div class="item" style="background-color: #1bbc9d">
                     <p>1</p>
                 </div>
-                <div class="item" data-color="2fcc71">
+                <div class="item" style="background-color: #2fcc71">
                     <p>2</p>
                 </div>
-                <div class="item" data-color="3598dc">
+                <div class="item" style="background-color: #3598dc">
                     <p>3</p>
                 </div>
-                <div class="item" data-color="9c59b8">
+                <div class="item" style="background-color: #9c59b8">
                     <p>4</p>
                 </div>
-                <div class="item" data-color="34495e">
+                <div class="item" style="background-color: #34495e">
                     <p>5</p>
                 </div>
-                <div class="item" data-color="16a086">
+                <div class="item" style="background-color: #16a086">
                     <p>6</p>
                 </div>
-                <div class="item" data-color="27ae61">
+                <div class="item" style="background-color: #27ae61">
                     <p>7</p>
                 </div>
-                <div class="item" data-color="2a80b9">
+                <div class="item" style="background-color: #2a80b9">
                     <p>8</p>
                 </div>
-                <div class="item" data-color="8f44ad">
+                <div class="item" style="background-color: #8f44ad">
                     <p>9</p>
                 </div>
-                <div class="item" data-color="2d3e50">
+                <div class="item" style="background-color: #2d3e50">
                     <p>10</p>
                 </div>
-                <div class="item" data-color="f1c40f">
+                <div class="item" style="background-color: #f1c40f">
                     <p>11</p>
                 </div>
-                <div class="item" data-color="e77e23">
+                <div class="item" style="background-color: #e77e23">
                     <p>12</p>
                 </div>
-                <div class="item" data-color="e84c3d">
+                <div class="item" style="background-color: #e84c3d">
                     <p>13</p>
                 </div>
-                <div class="item" data-color="ecf0f1">
+                <div class="item" style="background-color: #ecf0f1">
                     <p>14</p>
                 </div>
-                <div class="item" data-color="96a6a6">
+                <div class="item" style="background-color: #96a6a6">
                     <p>15</p>
                 </div>
-                <div class="item" data-color="f49c14">
+                <div class="item" style="background-color: #f49c14">
                     <p>16</p>
                 </div>
-                <div class="item" data-color="d55401">
+                <div class="item" style="background-color: #d55401">
                     <p>17</p>
                 </div>
-                <div class="item" data-color="c1392b">
+                <div class="item" style="background-color: #c1392b">
                     <p>18</p>
                 </div>
-                <div class="item" data-color="bec3c7">
+                <div class="item" style="background-color: #bec3c7">
                     <p>19</p>
                 </div>
-                <div class="item" data-color="808b8d">
+                <div class="item" style="background-color: #808b8d">
                     <p>20</p>
                 </div>
 
@@ -246,40 +264,44 @@
             <h2><img src="icon.png">Properties for the flex items </h2>
         </section>
 
-        <section>
+        <section id="align-self" style="--align-self: flex-start">
             <div class="control">
                 <h4>align-self:</h4>
                 <div class="radio">
-                    <input name="align-self" type="radio" class="align-self" id="R61" value="align-self-auto"
-                        checked><label for="R61">auto</label>
-                    <input name="align-self" type="radio" class="align-self" id="R62" value="align-self-start"><label
-                        for="R62">flex-start</label>
-                    <input name="align-self" type="radio" class="align-self" id="R63" value="align-self-end"><label
-                        for="R63">flex-end</label>
-                    <input name="align-self" type="radio" class="align-self" id="R64" value="align-self-center"><label
-                        for="R64">center</label>
-                    <!-- <input name="align-self" type="radio" class="align-self" id="R65" value="align-self-baseline"><label
-                        for="R65">baseline</label> -->
-                    <input name="align-self" type="radio" class="align-self" id="R66" value="align-self-stretch"><label
-                        for="R66">stretch</label>
+
+                    <input name="align-self" type="radio" id="R62" value="flex-start" checked>
+                    <label for="R62">flex-start</label>
+
+                    <input name="align-self" type="radio" id="R63" value="flex-end">
+                    <label for="R63">flex-end</label>
+
+                    <input name="align-self" type="radio" id="R64" value="center">
+                    <label for="R64">center</label>
+                    <!--
+                        <input name="align-self" type="radio" class="align-self" id="R65" value="baseline">
+                        <labelfor="R65">baseline</label>
+                    -->
+
+                    <input name="align-self" type="radio" class="align-self" id="R66" value="stretch">
+                    <label for="R66">stretch</label>
                 </div>
 
             </div>
-            <div class="flex-container align-items-center" id="FCI1">
+            <div class="flex-container">
 
-                <div class="item" data-color="f49c14">
+                <div class="item" style="background-color: #f49c14">
                     <p>1</p>
                 </div>
-                <div class="item" data-color="d55401">
+                <div class="item" style="background-color: #d55401">
                     <p>2</p>
                 </div>
-                <div class="item" data-color="c1392b" id="alignSelf">
+                <div class="item" style="background-color: #c1392b" id="alignSelf">
                     <p style="font-size:50px;">3</p>
                 </div>
-                <div class="item" data-color="bec3c7">
+                <div class="item" style="background-color: #bec3c7">
                     <p>4</p>
                 </div>
-                <div class="item" data-color="808b8d">
+                <div class="item" style="background-color: #808b8d">
                     <p>5</p>
                 </div>
 
@@ -304,19 +326,19 @@
         </div>
         <div class="flex-container align-items-center" id="FCI2">
 
-            <div class="item" id="itemR71" data-color="f49c14">
+            <div class="item" id="itemR71" style="background-color: #f49c14">
                 <p>1</p>
             </div>
-            <div class="item" id="itemR72" data-color="d55401">
+            <div class="item" id="itemR72" style="background-color: #d55401">
                 <p>2</p>
             </div>
-            <div class="item" id="itemR73" data-color="c1392b">
+            <div class="item" id="itemR73" style="background-color: #c1392b">
                 <p>3</p>
             </div>
-            <div class="item" id="itemR74" data-color="bec3c7">
+            <div class="item" id="itemR74" style="background-color: #bec3c7">
                 <p>4</p>
             </div>
-            <div class="item" id="itemR75" data-color="808b8d">
+            <div class="item" id="itemR75" style="background-color: #808b8d">
                 <p>5</p>
             </div>
 
@@ -342,19 +364,19 @@
         </div>
         <div class="flex-container align-items-center" id="FCI3">
 
-            <div class="item" id="itemR81" data-color="f49c14">
+            <div class="item" id="itemR81" style="background-color: #f49c14">
                 <p>1</p>
             </div>
-            <div class="item" id="itemR82" data-color="d55401">
+            <div class="item" id="itemR82" style="background-color: #d55401">
                 <p>2</p>
             </div>
-            <div class="item" id="itemR83" data-color="c1392b">
+            <div class="item" id="itemR83" style="background-color: #c1392b">
                 <p>3</p>
             </div>
-            <div class="item" id="itemR84" data-color="bec3c7">
+            <div class="item" id="itemR84" style="background-color: #bec3c7">
                 <p>4</p>
             </div>
-            <div class="item" id="itemR85" data-color="808b8d">
+            <div class="item" id="itemR85" style="background-color: #808b8d">
                 <p>5</p>
             </div>
 
@@ -393,50 +415,58 @@
 
         <div class="flex-container align-items-center" id="FCI4">
 
-            <div class="item" id="item1" data-color="f49c14">
+            <div class="item" id="item1" style="background-color: #f49c14">
                 <p>1</p>
             </div>
-            <div class="item" id="item2" data-color="d55401">
+            <div class="item" id="item2" style="background-color: #d55401">
                 <p>2</p>
             </div>
 
         </div> -->
 
 
-        <section>
+        <section id="order">
             <div class="control">
                 <h4>order:</h4>
 
                 <div class="radio">
-                    <span class="nbsp"><label for="R91">Element 1: </label><input type="number" class="flex-order"
-                            id="R91" min="0"></span>
-                    <span class="nbsp"><label for="R92">Element 2: </label><input type="number" class="flex-order"
-                            id="R92" min="0"></span>
-                    <span class="nbsp"><label for="R93">Element 3: </label><input type="number" class="flex-order"
-                            id="R93" min="0"></span>
-                    <span class="nbsp"><label for="R94">Element 4: </label><input type="number" class="flex-order"
-                            id="R94" min="0"></span>
-                    <span class="nbsp"><label for="R95">Element 5: </label><input type="number" class="flex-order"
-                            id="R95" min="0"></span>
+                    <span class="nbsp">
+                        <label for="R91">Element 1: </label>
+                        <input type="number" class="flex-order" id="R91" min="0">
+                    </span>
+                    <span class="nbsp">
+                        <label for="R92">Element 2: </label>
+                        <input type="number" class="flex-order" id="R92" min="0">
+                    </span>
+                    <span class="nbsp">
+                        <label for="R93">Element 3: </label>
+                        <input type="number" class="flex-order" id="R93" min="0">
+                    </span>
+                    <span class="nbsp">
+                        <label for="R94">Element 4: </label>
+                        <input type="number" class="flex-order" id="R94" min="0">
+                    </span>
+                    <span class="nbsp">
+                        <label for="R95">Element 5: </label>
+                        <input type="number" class="flex-order" id="R95" min="0">
+                    </span>
                 </div>
-
             </div>
-            <div class="flex-container align-items-center" id="FCI5">
 
-
-                <div class="item" id="orderR91" data-color="f49c14">
+            <div class="flex-container" id="FCI5">
+                <div class="item" id="orderR91" style="background-color: #f49c14">
                     <p>1</p>
                 </div>
-                <div class="item" id="orderR92" data-color="d55401">
+                <div class="item" id="orderR92" style="background-color: #d55401">
                     <p>2</p>
                 </div>
-                <div class="item" id="orderR93" data-color="c1392b">
+                <div class="item" id="orderR93" style="background-color: #c1392b">
                     <p>3</p>
                 </div>
-                <div class="item" id="orderR94" data-color="bec3c7">
+                <div class="item" id="orderR94" style="background-color: #bec3c7">
                     <p>4</p>
                 </div>
-                <div class="item" id="orderR95" data-color="808b8d">
+                <div class="item" id="orderR95" style="background-color: #808b8d">
                     <p>5</p>
                 </div>
 
@@ -453,7 +483,21 @@
 
     </div>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script>
+        window.onload = () => {
+            for (let radio of document.querySelectorAll("input[type=radio]"))
+                radio.onclick = () => radio.checked && (
+                    radio.closest('section').setAttribute('style', `--${radio.name}: ${radio.value}`)
+                )
+
+            for (let input of document.querySelectorAll("#order input[type=number]"))
+                input.oninput = () => {
+                    input.closest('section').querySelector(`#order${input.id}`).style.order = input.value
+                }
+        }
+    </script>
+
+    <!-- <script type="text/javascript" src="main.js"></script> -->
 </body>
 
 </html>
