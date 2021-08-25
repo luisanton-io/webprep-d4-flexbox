@@ -87,7 +87,10 @@ img[src="icon.png"] {
 #align-content .flex-container {
     align-content: var(--align-content);
 }
-#align-self .flex-container .item {
+#align-self .flex-container {
+    align-items: center;
+}
+#align-self .flex-container .item:nth-of-type(3) {
     align-self: var(--align-self);
 }
 

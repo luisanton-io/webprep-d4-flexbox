@@ -478,7 +478,7 @@
         </section>
 
         <section>
-            <iframe src="https://flexboxfroggy.com"></iframe>
+            <iframe></iframe>
         </section>
 
     </div>
@@ -494,6 +494,8 @@
                 input.oninput = () => {
                     input.closest('section').querySelector(`#order${input.id}`).style.order = input.value
                 }
+
+            document.querySelector("iframe").src = "https://flexboxfroggy.com"
         }
     </script>
 
