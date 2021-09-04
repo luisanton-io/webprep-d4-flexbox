@@ -72,24 +72,14 @@ img[src="icon.png"] {
     margin: 0 auto;
 }
 
-#flex-direction .flex-container {
+.flex-container {
     flex-direction: var(--flex-direction);
-}
-#flex-wrap .flex-container {
     flex-wrap: var(--flex-wrap);
-}
-#align-items .flex-container {
     align-items: var(--align-items);
-}
-#justify-content .flex-container {
     justify-content: var(--justify-content);
-}
-#align-content .flex-container {
     align-content: var(--align-content);
 }
-#align-self .flex-container {
-    align-items: center;
-}
+
 #align-self .flex-container .item:nth-of-type(3) {
     align-self: var(--align-self);
 }
@@ -257,6 +247,20 @@ input[type="number"] {
     }
     #wrap {
         width: 200px;
+    }
+
+    h2 {
+        font-size: 2.3em;
+    }
+
+    img[src="icon.png"] {
+        width: 10%;
+    }
+
+    #order .radio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 

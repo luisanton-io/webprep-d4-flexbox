@@ -73,6 +73,7 @@ window.onload = () => {
         changeFlexShrink(this, e)
     });
 
+    window.scrollTo(0, 0)
 
     // const [B1, G1, S1, B2, G2, S2] = ["B1", "G1", "S1", "B2", "G2", "S2"].map(id => document.getElementById(id));
 
